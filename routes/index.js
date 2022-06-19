@@ -1,17 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* tentativa de listar as 2 tabelas no index */
-//router.get('/', async (req, res, next) => {
-//  try{
-//    const clientes = await global.db.findAllClients();
-//    const produtos = await global.db.findAllProducts();
-//    res.render('index', {clientes,produtos});
-//  }catch (err){
-//    next(err);
-//  }
-//});
-
 /*  ROTA PRINCIPAL  */
 router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
